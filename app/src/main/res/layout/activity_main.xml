@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:component_hint="@string/hint_fullName"
-        app:component_title="@string/title_fullName" />
+        app:component_title="@string/title_fullName"/>
 
     <com.codetantri.customedittext.CustomEnterTextLayout
         android:id="@+id/tvPhone"

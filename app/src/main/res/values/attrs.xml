@@ -7,5 +7,9 @@
 
         <attr name="error_color" format="color" />
         <attr name="title_color" format="color" />
+
+        <attr name="title_textsize" format="dimension" />
+        <attr name="hint_textsize" format="dimension" />
+        <attr name="error_textsize" format="dimension" />
     </declare-styleable>
 </resources>

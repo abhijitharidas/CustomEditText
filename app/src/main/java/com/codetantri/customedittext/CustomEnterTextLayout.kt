@@ -5,6 +5,7 @@ import android.annotation.TargetApi
 import android.content.Context
 import android.os.Build
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
@@ -50,11 +51,21 @@ class CustomEnterTextLayout : LinearLayout {
                     .getResourceId(R.styleable.custom_component_attributes_component_title, R.string.default_value))
             val hint = resources.getText(typedArray
                     .getResourceId(R.styleable.custom_component_attributes_component_hint, R.string.default_value))
+            val titleSize = resources.getDimension(typedArray
+                    .getResourceId(R.styleable.custom_component_attributes_title_textsize, R.dimen.default_title_textsixe))
+            val hintSize = resources.getDimension(typedArray
+                    .getResourceId(R.styleable.custom_component_attributes_title_textsize, R.dimen.default_hint_textsize))
+            val errorSize = resources.getDimension(typedArray
+                    .getResourceId(R.styleable.custom_component_attributes_title_textsize, R.dimen.default_error_textsize))
             errorColor = resources.getColor(typedArray
                     .getResourceId(R.styleable.custom_component_attributes_error_color, R.color.errortext_color))
             titleColor = resources.getColor(typedArray
                     .getResourceId(R.styleable.custom_component_attributes_title_color, R.color.black))
             titleText.setTextColor(titleColor)
+
+            titleText.setTextSize(TypedValue.COMPLEX_UNIT_PX, titleSize)
+            hintText.setTextSize(TypedValue.COMPLEX_UNIT_PX, hintSize)
+            errorText.setTextSize(TypedValue.COMPLEX_UNIT_PX, errorSize)
 
             clearError()
 

@@ -6,7 +6,6 @@
 
     <TextView
         android:id="@+id/titleText"
-        style="@style/custom_component_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -17,7 +16,6 @@
 
     <TextView
         android:id="@+id/errorText"
-        style="@style/custom_component_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
