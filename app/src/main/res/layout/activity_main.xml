@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.codetantri.customedittext.MainActivity">
+
+    <com.codetantri.customedittext.CustomEnterTextLayout
+        android:id="@+id/tvFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:component_hint="@string/hint_fullName"
+        app:component_title="@string/title_fullName" />
+
+    <com.codetantri.customedittext.CustomEnterTextLayout
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:component_hint="@string/hint_phoneNumber"
+        app:component_title="@string/title_phoneNumber" />
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom_component_attributes">
+        <attr name="component_title" format="reference" />
+        <attr name="component_hint" format="reference" />
+        <attr name="component_error" format="string" />
+
+        <attr name="error_color" format="color" />
+        <attr name="title_color" format="color" />
+    </declare-styleable>
+</resources>

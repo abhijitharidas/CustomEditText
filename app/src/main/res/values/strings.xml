@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CustomEditText</string>
+
+    <string name="title_fullName">Full Name</string>
+    <string name="hint_fullName">Please enter full name</string>
+
+    <string name="title_phoneNumber">Phone Number</string>
+    <string name="hint_phoneNumber">Please enter the phone number</string>
+
+    <string name="default_value"></string>
+
+
+</resources>
